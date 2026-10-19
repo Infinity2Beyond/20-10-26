@@ -560,14 +560,8 @@ if (roseContainer) {
 
     roseContainer.addEventListener('touchstart', (e) => {
         if (isRoseFullyBloomed) {
-            const currentTime = new Date().getTime();
-            const tapLength = currentTime - lastRoseTap;
-            
-            if (tapLength < 300 && tapLength > 0) {
-                e.preventDefault();
-                showSpecialWish(e);
-            }
-            lastRoseTap = currentTime;
+            e.preventDefault();
+            showSpecialWish(e);
         }
     }, { passive: false });
 }
