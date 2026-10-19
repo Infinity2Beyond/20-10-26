@@ -552,7 +552,7 @@ function startAutoBloomRose() {
 }
 
 if (roseContainer) {
-    roseContainer.addEventListener('dblclick', (e) => {
+    roseContainer.addEventListener('click', (e) => {
         if (isRoseFullyBloomed) {
             showSpecialWish(e);
         }
