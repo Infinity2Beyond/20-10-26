@@ -158,7 +158,7 @@ for (let i = 0; i < gridPositions.length; i++) {
     flower.style.zIndex = Math.floor(gridPositions[i].y);
     flower.innerHTML = flowerHTML;
 
-    flower.addEventListener('dblclick', showWish);
+    flower.addEventListener('click', showWish);
     fragment.appendChild(flower);
     let lastTap = 0;
     flower.addEventListener('touchstart', (e) => {
